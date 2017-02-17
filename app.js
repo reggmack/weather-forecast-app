@@ -23,7 +23,7 @@ weatherApp.config(function ($routeProvider) {
 // SERVICES
 weatherApp.service('cityService', function() {
     
-    this.city = "London";
+    this.city = "New York, NY";
     
 });
 
@@ -48,6 +48,16 @@ weatherApp.controller('forecastController', ['$scope', '$resource', 'cityService
     
     $scope.weatherResult = $scope.weatherAPI.get({ q: $scope.city, cnt: 2  });
     
-    console.log($scope.weatherResult);
+    $scope.convertToFahrenheit = function(degK) {
+        
+        return Math.round((1.8 * (degK - 273)) + 32);
+        
+    }
+    
+    $scope.convertToDate = function(dt) {
+        
+        return new Date(dt * 1000);
+        
+    }
     
 }]);
