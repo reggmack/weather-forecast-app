@@ -1,0 +1,13 @@
+282c41a08467cf463cfad366c104d472
+
+weatherApp API:
+0faffe11199fbf5df03cc32b2dbdfa19
+
+http://api.openweathermap.org/data/2.5/forecast/daily?APPID=282c41a08467cf463cfad366c104d472
+
+
+Nashville ID 
+4644585
+
+GOOD!
+api.openweathermap.org/data/2.5/forecast?id=4644585&APPID=0faffe11199fbf5df03cc32b2dbdfa19 
